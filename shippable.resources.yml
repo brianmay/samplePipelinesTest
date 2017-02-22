@@ -7,13 +7,13 @@ resources:
 # Docker Image for VISUALIZER
   - name: dv-img
     type: image
-    integration: dh-manishas
+    integration: docker
     pointer:
-      sourceName: "shippableSamples/samplepipelinesdemo"
+      sourceName: "brianmay/samplepipelinesdemo"
       isPull: false
     #make sure this seed version exists in your registry account
     seed:
-      versionName: master.1
+      versionName: master.3
 
 # Docker Image Options for VISUALIZER
   - name: dv-img-opts
@@ -37,7 +37,7 @@ resources:
     type: cluster
     integration: demo-manishas-ecs
     pointer:
-      sourceName : "demo-shippable-ecs-test"
-      region: "us-east-1"
+      sourceName : "brianmay-shippable"
+      region: "ap-southeast-2"
 
 #######1: EOF Create DV pipeline
