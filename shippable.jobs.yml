@@ -39,7 +39,7 @@ jobs:
       - IN: dv-test-ecs
         switch: off
       - IN: dv-trigger
-        switch: off
+        switch: on
       - TASK: managed
         bump: minor
 
