@@ -31,3 +31,14 @@ jobs:
       - OUT: dv-img
 # / Connect CI with dv-img resource
 
+ - name: dv-rel
+    type: release
+    steps:
+      - IN: dv-ver
+        switch: off
+      - IN: dv-test-ecs
+        switch: off
+      - IN: dv-trigger
+        switch: off
+      - TASK: managed
+        bump: minor
