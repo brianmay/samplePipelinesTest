@@ -40,6 +40,13 @@ resources:
       sourceName : "brianmay-shippable"
       region: "ap-southeast-2"
 
+  - name: env-prod-ecs
+    type: cluster
+    integration: AWS-wspdigital-testing
+    pointer:
+      sourceName : "brianmay-prod"
+      region: "ap-southeast-2"
+
   - name: dv-ver
     type: version
     seed:
