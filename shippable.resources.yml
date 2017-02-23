@@ -44,7 +44,7 @@ resources:
     type: cluster
     integration: AWS-wspdigital-testing
     pointer:
-      sourceName : "brianmay-prod"
+      sourceName : "brianmay-shippable"
       region: "ap-southeast-2"
 
   - name: dv-ver
